@@ -7,6 +7,10 @@ const errorHandler: ErrorRequestHandler = (err, req, res, next) => {
     }
 
     if (err.code === "Conflict") {
+        return res.status(409).send(err.message)
+    }
+
+    if (err.code === "BadRequest") {
         return res.status(404).send(err.message)
     }
 

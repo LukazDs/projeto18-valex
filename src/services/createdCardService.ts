@@ -89,5 +89,3 @@ export async function getCVC() {
     return encryptedCvc;
 
 }
-
-
