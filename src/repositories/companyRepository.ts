@@ -12,5 +12,5 @@ export async function findByApiKey(apiKey: string) {
     [apiKey]
   );
 
-  return result.rows[0];
+  return result.rows;
 }
